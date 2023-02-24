@@ -5,7 +5,8 @@
 {% endblock %}
 
 {% block content %}
-<h1>Главная страница</h1>
+    <h1>Главная страница</h1>
+    {% if tasks %}
     {% for el in tasks %}
     <div class="alert alert-warning mt-2">
        <h3>{{el.title}}</h3>
@@ -13,4 +14,7 @@
        <p>{{el.prise}}</p>
     </div>
     {% endfor %}
+    {% else %}
+        <p>У вас нет записей</p>
+    {% endif %}
 {% endblock %}
