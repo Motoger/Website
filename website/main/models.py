@@ -11,3 +11,11 @@ class Task(models.Model):
     class Meta:
         verbose_name="Задача"
         verbose_name_plural='Задачи'
+
+class Profile(models.Model):
+    about_me=models.TextField('О себе:')
+    contact=models.TextField('Контактная информация:')
+
+    class Meta:
+        verbose_name="Профиль"
+        verbose_name_plural="Профили"
