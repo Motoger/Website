@@ -16,4 +16,10 @@
     {% else %}
         <p>У вас нет записей</p>
     {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.about_me }}<br>
+        {{ form.contact }}<br>
+        <button type="submit" class="btn btn-success">Добавить</button>
+    </form>
 {% endblock %}

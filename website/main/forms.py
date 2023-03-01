@@ -15,6 +15,6 @@ class ProfileForm(ModelForm):
     class Meta:
         model = Profile
         fields = ['about_me','contact']
-        widgets = {'about_me': TextInput(attrs={'class': 'form-control', 'placeholder': 'Введите значение'}),
-                   'contact': TextInput(attrs={'class': 'form-control', 'placeholder': 'Введите значение'}),
+        widgets = {'about_me': TextInput(attrs={'class': 'form-control', 'placeholder': 'О себе'}),
+                   'contact': TextInput(attrs={'class': 'form-control', 'placeholder': 'Контактные данные'}),
                    }
